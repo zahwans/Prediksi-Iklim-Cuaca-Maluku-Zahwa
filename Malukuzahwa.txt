@@ -1,0 +1,39 @@
+import streamlit as st
+
+# --- CUSTOM STYLE (warna soft ungu) ---
+st.markdown("""
+    <style>
+        /* Background warna soft ungu */
+        .stApp {
+            background-color: #f3e8ff !important;   /* ungu pastel */
+        }
+
+        /* Sidebar */
+        section[data-testid="stSidebar"] {
+            background-color: #e9d5ff !important;
+        }
+
+        /* Card / box */
+        div[data-testid="stMetricValue"], div[data-testid="stMetricDelta"], .stMetric {
+            background-color: #faf5ff !important;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Tombol */
+        .stButton>button {
+            background-color: #c084fc !important;   /* soft purple */
+            color: white !important;
+            border-radius: 10px;
+            border: none;
+        }
+        .stButton>button:hover {
+            background-color: #a855f7 !important;
+        }
+
+        /* Judul */
+        h1, h2, h3, h4 {
+            color: #6b21a8 !important;  /* ungu lebih gelap */
+        }
+    </style>
+""", unsafe_allow_html=True)
